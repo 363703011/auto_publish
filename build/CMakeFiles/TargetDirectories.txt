@@ -1,0 +1,3 @@
+/app/work/c/auto_publish/build/CMakeFiles/edit_cache.dir
+/app/work/c/auto_publish/build/CMakeFiles/rebuild_cache.dir
+/app/work/c/auto_publish/build/CMakeFiles/hello.dir
