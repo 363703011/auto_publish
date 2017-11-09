@@ -16,6 +16,7 @@ SRC=main.cpp MyMath.cpp MyMath.h main.cpp
 
 all:mymath
 
+
 mymath:MyMath.o main.o
 	$(CC)  $(CFLAGS) -o mymath main.o MyMath.o -L$(shell pwd) -lMyMath
 main.o:main.cpp
