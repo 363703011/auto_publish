@@ -4,7 +4,6 @@ LDFLAGS= -fPIC -shared
 
 TARGET=MyMath
 
-
 CC=g++
 
 #.SUFFIX=
@@ -18,7 +17,7 @@ SRC=main.cpp MyMath.cpp MyMath.h main.cpp
 all:mymath
 
 mymath:MyMath.o main.o
-	$(CC)  $(CFLAGS) -o mymath main.o MyMath.o -L/app/work/c/auto_publish -lMyMath
+	$(CC)  $(CFLAGS) -o mymath main.o MyMath.o -L$(shell pwd) -lMyMath
 main.o:main.cpp
 	$(CC) -c $(CFLAGS) $(LDFLAGS) -o main.o  main.cpp
 MyMath.o:MyMath.cpp MyMath.h
